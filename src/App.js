@@ -25,6 +25,6 @@ function App() {
 
 export default App;
 
-
+// App.js imports the horned creatures data and passes it to ImageList.js (stretch goal) 
 // 1. Make list of images with captions, names, etc. using the data array
 // 2. then you're adding a dropdown to let you filter the images by their keyword
