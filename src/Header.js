@@ -31,7 +31,7 @@ class Header extends Component {
         console.log(this.state);
         return (
             <>
-            <div>
+            <div className="grid">
                 <header> Horned Creatures! </header>
                 <select onChange={this.handleDropDown}> 
             {
