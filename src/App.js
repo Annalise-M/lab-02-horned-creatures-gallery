@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import images from './data.js';
 import ImageList from './ImageList.js';
-import ImageItem from './ImageItem.js';
-// import Header from './Header.js';
+// import ImageItem from './ImageItem.js';
+import Header from './Header.js';
 
 const options = [
   "unilego",
@@ -35,7 +35,7 @@ render() {
   console.log(this.state);
   return (
       <>
-        {/* <Header /> */}
+        <Header />
         <ImageList images={filteredImages} />
          
           <select onChange={this.handleDropDown}> 
@@ -43,9 +43,6 @@ render() {
               options.map(type => <option key={type} value={type}>{type}</option>)
             }
           </select>
-            {
-              filteredImages.map(image => <li>{ImageItem.name}</li>)
-            }
       </>
     );
   }
