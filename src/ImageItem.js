@@ -5,10 +5,11 @@ class ImageItem extends React.Component {
     render() {
         return ( 
             <div>
-                <img src={this.props.image} alt={this.props.title} />
+                <img alt="random" key={this.props.image.title} src={this.props.image.url} />
             </div>
         )
     }
 }
 
 export default ImageItem;
+

@@ -4,11 +4,13 @@ import ImageItem from './ImageItem.js';
 
 class ImageList extends React.Component {
     render() {
+        const imageArray = this.props.images;
+        // console.log(imageArray);
         return (
-            <div> 
-            {
-                this.props.images.map((image) => <ImageItem key={image} image={image} />)
-            }
+            <div>
+                   {imageArray.map((image) => {
+                       return <ImageItem key={this.props.title} image={image} />
+                   })}
             </div>
         )
     }
