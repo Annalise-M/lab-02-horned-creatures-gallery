@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import './styles.css';
 // import images from './data.js';
 // import ImageList from './ImageList.js';
 import Header from './Header.js';

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import './styles.css';
 import images from './data.js';
 import ImageList from './ImageList.js';
+
 
 const options = [
     "unilego",
@@ -32,7 +34,7 @@ class Header extends Component {
         return (
             <>
             <div className="grid">
-                <header> Horned Creatures! </header>
+                <header className="horned-creatures-text"> Horned Creatures! </header>
                 <select onChange={this.handleDropDown}> 
             {
                 options.map(type => <option key={type} value={type}>{type}</option>)

@@ -1,0 +1,37 @@
+$primaryColors : rgb(122, 175, 219);
+$primaryColors2: rgb(212, 108, 205);
+ 
+$mainTextColor: black;
+
+// $textFont: @import url('https://fonts.googleapis.com/css2?family=Bellota&display=swap'), 
+// font-family: 'Bellota', cursive;
+
+header {
+    align-items: center;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+}
+.horned-creatures-text {
+    background-color: $primaryColors2;
+   
+    color: $mainTextColor;
+}
+
+img {
+    align-items: center;
+    height: 250px;
+    width: 250px;
+}
+
+.grid {
+    background-color: $primaryColors;
+    align-items: center;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    grid-row: flex;
+    color: $mainTextColor;
+}
+
