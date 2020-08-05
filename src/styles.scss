@@ -11,7 +11,7 @@ header {
     background-color: lightblue;
     display: flex;
     justify-content: center;
-    color: $textColor;
+    color: $mainTextColor;
 }
 .horned-creatures-text {
     background-color: $primaryColors2;
@@ -19,19 +19,17 @@ header {
     color: $mainTextColor;
 }
 
-img {
-    align-items: center;
-    height: 250px;
-    width: 250px;
-}
 
 .grid {
-    background-color: $primaryColors;
-    align-items: center;
+    align-items: row;
     background-color: lightblue;
-    display: flex;
+    display: flexbox;
     justify-content: center;
-    grid-row: flex;
     color: $mainTextColor;
+}
+
+img {
+    height: 250px;
+    width: auto;
 }
 
