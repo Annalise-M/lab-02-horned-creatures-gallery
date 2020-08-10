@@ -1,36 +1,52 @@
 header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 20vh;
   color: black;
 }
 
+body img {
+  height: 150px;
+  width: auto;
+  border: 1px solid rgba(81, 43, 249, 0.815);
+  background-color: #4ed7ec;
+  padding: 5px;
+}
+
 .horned-creatures-text {
-  background-color: #d46ccd;
+  background-color: rgba(71, 157, 227, 0.434);
   color: black;
 }
 
 .grid {
-  -webkit-box-align: row;
-      -ms-flex-align: row;
-          align-items: row;
-  background-color: lightblue;
-  display: flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: row;
+      -ms-flex-align: row;
+          align-items: row;
+  background-color: #116fe1;
   color: black;
-}
-
-img {
-  height: 250px;
-  width: auto;
 }
 /*# sourceMappingURL=styles.css.map */
