@@ -1,35 +1,53 @@
-$primaryColors : rgb(122, 175, 219);
-$primaryColors2: rgb(212, 108, 205);
+$primaryColors : rgb(17, 111, 225);
+$primaryColors2: rgba(71, 157, 227, 0.434);
+$primaryColors3: rgba(81, 43, 249, 0.815);
  
 $mainTextColor: black;
 
 // $textFont: @import url('https://fonts.googleapis.com/css2?family=Bellota&display=swap'), 
 // font-family: 'Bellota', cursive;
 
-header {
-    align-items: center;
-    background-color: lightblue;
+@mixin flexCenter ($direction) {
     display: flex;
     justify-content: center;
+    align-items: flex;
+    flex-direction: $direction;
+}
+
+header {  
+    @include flexCenter(grid);
+    
+   
+    height: 20vh;
     color: $mainTextColor;
 }
+
+body{
+    @include flexCenter(row);
+    
+    img {
+        height: 150px;
+        width: auto;
+        border: 1px solid $primaryColors3;
+        background-color: rgb(78, 215, 236);
+        padding: 5px;
+    }
+    
+}
+
 .horned-creatures-text {
     background-color: $primaryColors2;
-   
     color: $mainTextColor;
 }
-
 
 .grid {
+    @include flexCenter();
+
     align-items: row;
-    background-color: lightblue;
-    display: flexbox;
-    justify-content: center;
+    background-color: $primaryColors;
     color: $mainTextColor;
 }
 
-img {
-    height: 250px;
-    width: auto;
-}
+
+
 
